@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Problem Details</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #0f172a;
+            color: #f8fafc;
+            font-family: 'Segoe UI', sans-serif;
+            padding: 30px 16px;
+        }
+
+        .breadcrumb a {
+            color: #f59e0b;
+            text-decoration: none;
+        }
+
+        .detail-box {
+            background: #1e293b;
+            border: 2px solid #f59e0b;
+            border-radius: 14px;
+            padding: 24px;
+        }
+
+        .label {
+            color: #f59e0b;
+            font-weight: 600;
+        }
+
+        .action-btn {
+            border-radius: 25px;
+            padding: 10px 18px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb mb-3">
+        <a href="index.html">Home</a>
+        <span class="mx-2">›</span>
+        <span>Problem Details</span>
+    </nav>
+
+    <div class="container detail-box">
+        <h2 id="psTitle"></h2>
+
+        <p class="mt-3"><span class="label">PS ID:</span> <span id="psId"></span></p>
+        <p><span class="label">Category:</span> <span id="psCategory"></span></p>
+        <p class="mt-3" id="psDescription"></p>
+
+        <!-- Action Buttons -->
+        <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
+            <a href="https://sih.gov.in/sih2025PS" target="_blank" class="btn btn-outline-warning action-btn">
+                For more details
+            </a>
+
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUi7jjX4467KVdFbk8FDvhur3D6gFSr5rfCda-wbumz8M59w/viewform?usp=header"
+                target="_blank" class="btn btn-warning action-btn text-dark">
+                Click here to register <i class="fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <button class="btn btn-outline-warning mt-4" onclick="history.back()">←</button>
+    </div>
+
+    <script>
+        const data = {
+            SIH25065: {
+                title: "WaterWise AI",
+                category: "Software",
+                desc: "Designing and development of an application for on spot assessment of Roof Top Rain water harvesting and artificial recharge potential and size of the RTRWH and AR."
+            },
+            SIH25066: {
+                title: "INGRES Virtual Assistant",
+                category: "Software",
+                desc: "Development of an AI-driven ChatBOT for INGRES as a virtual assistant."
+            },
+            SIH25091: {
+                title: "NEP Smart Scheduler",
+                category: "Software",
+                desc: "AI-Based Timetable Generation System aligned with NEP 2020 for Multidisciplinary Education Structures."
+            },
+            SIH25149: {
+                title: "LoanTrace",
+                category: "Software",
+                desc: "Loan Utilization Tracking via Mobile."
+            },
+            SIH25162: {
+                title: "ChipGuard AI",
+                category: "Software",
+                desc: "Automated Optical Inspection (AOI) based IC marking to identify fake marking."
+            },
+            SIH25163: {
+                title: "AutoHeal Systems",
+                category: "Software",
+                desc: "Self-Healing Computing Elements."
+            },
+            SIH25192: {
+                title: "Project Oracle",
+                category: "Software",
+                desc: "Predicting Project Costs and Timeline."
+            },
+            SIH25231: {
+                title: "OfflineMind RAG",
+                category: "Software",
+                desc: "Design and build a multimodel Retrieval-Augmented Generation (RAG) system leveraging a Large Language Model (LLM) for OFFLINE mode."
+            },
+            SIH25195: {
+                title: "SmartDesk Pro",
+                category: "Software",
+                desc: "Smart Helpdesk Ticketing Solution for IT Services."
+            },
+            SIH25235: {
+                title: "LogVault",
+                category: "Software",
+                desc: "Portable log analysis tool for isolated network."
+            },
+            SIH25243: {
+                title: "AquaVision AI",
+                category: "Software",
+                desc: "AI-Based Underwater Image Enhancement System for Increased Maritime Security."
+            },
+            SIH25245: {
+                title: "TechForesight AI",
+                category: "Software",
+                desc: "Automated Comprehensive Technology Intelligence and Forecasting Platform."
+            }
+        };
+
+        const id = new URLSearchParams(window.location.search).get("id");
+        const ps = data[id];
+
+        if (ps) {
+            document.getElementById("psTitle").innerText = ps.title;
+            document.getElementById("psId").innerText = id;
+            document.getElementById("psCategory").innerText = ps.category;
+            document.getElementById("psDescription").innerText = ps.desc;
+        }
+    </script>
+
+</body>
+
+</html>
