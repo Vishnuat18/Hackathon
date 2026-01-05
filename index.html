@@ -18,114 +18,297 @@
 
         h1 {
             color: #6366f1;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
 
         h2 {
-            margin-bottom: 30px;
             font-size: 1.1rem;
             color: #c7d2fe;
+            margin-bottom: 10px;
+        }
+
+        .intro {
+            max-width: 850px;
+            margin: 0 auto 10px;
+            color: #e2e8f0;
+            font-size: 0.95rem;
+        }
+
+        .howto {
+            font-size: 0.9rem;
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        .divider {
+            border-color: #334155;
+            margin: 30px 0;
         }
 
         .ps-card {
             background: #1e293b;
-            border-radius: 12px;
-            padding: 18px;
-            border: 1px solid transparent;
-            transition: 0.3s;
+            border-radius: 14px;
+            padding: 16px;
+            border: 1px solid #1e293b;
+            transition: 0.25s;
+            height: 100%;
         }
 
         .ps-card:hover {
             border-color: #6366f1;
-            transform: translateY(-4px);
+        }
+
+        .ps-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.05rem;
+            font-weight: 600;
+        }
+
+        .ps-icon {
+            font-size: 1.4rem;
+        }
+
+        .ps-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 8px;
+            font-size: 0.8rem;
+        }
+
+        .ps-id {
+            color: #f59e0b;
+            font-weight: 500;
+        }
+
+        .badge-soft {
+            background: rgba(99, 102, 241, 0.15);
+            color: #c7d2fe;
+            border-radius: 12px;
+            padding: 2px 10px;
+            font-size: 0.75rem;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #94a3b8;
         }
     </style>
 </head>
 
 <body>
 
+    <!-- Header -->
     <div class="text-center">
         <h1>Hackathon Problem Statements</h1>
         <h2>Theme: Smart Automation</h2>
+
+        <p class="intro">
+            Explore Smart Automation problem statements from Smart India Hackathon 2025.
+            Select a problem to view detailed description, category, and registration links.
+        </p>
+
+        <p class="howto">
+            <strong>How it works:</strong> Click on any problem statement below to view full details.
+        </p>
     </div>
 
+    <hr class="divider">
+
+    <!-- Cards -->
     <div class="container">
         <div class="row g-3">
 
+            <!-- 1 -->
             <div class="col-12 col-md-6">
                 <a href="detail.html?id=SIH25065" class="text-decoration-none text-light">
-                    <div class="ps-card">WaterWise AI</div>
+                    <div class="ps-card">
+                        <div class="ps-header">
+                            <span class="ps-icon">💧</span> WaterWise AI
+                        </div>
+                        <div class="ps-meta">
+                            <span class="ps-id">SIH25065</span>
+                            <span class="badge-soft">Software</span>
+                        </div>
+                    </div>
                 </a>
             </div>
 
+            <!-- 2 -->
             <div class="col-12 col-md-6">
                 <a href="detail.html?id=SIH25066" class="text-decoration-none text-light">
-                    <div class="ps-card">INGRES Virtual Assistant</div>
+                    <div class="ps-card">
+                        <div class="ps-header">
+                            <span class="ps-icon">🤖</span> INGRES Virtual Assistant
+                        </div>
+                        <div class="ps-meta">
+                            <span class="ps-id">SIH25066</span>
+                            <span class="badge-soft">Software</span>
+                        </div>
+                    </div>
                 </a>
             </div>
 
+            <!-- 3 -->
             <div class="col-12 col-md-6">
                 <a href="detail.html?id=SIH25091" class="text-decoration-none text-light">
-                    <div class="ps-card">NEP Smart Scheduler</div>
+                    <div class="ps-card">
+                        <div class="ps-header">
+                            <span class="ps-icon">📅</span> NEP Smart Scheduler
+                        </div>
+                        <div class="ps-meta">
+                            <span class="ps-id">SIH25091</span>
+                            <span class="badge-soft">Software</span>
+                        </div>
+                    </div>
                 </a>
             </div>
 
+            <!-- 4 -->
             <div class="col-12 col-md-6">
                 <a href="detail.html?id=SIH25149" class="text-decoration-none text-light">
-                    <div class="ps-card">LoanTrace</div>
+                    <div class="ps-card">
+                        <div class="ps-header">
+                            <span class="ps-icon">💰</span> LoanTrace
+                        </div>
+                        <div class="ps-meta">
+                            <span class="ps-id">SIH25149</span>
+                            <span class="badge-soft">Software</span>
+                        </div>
+                    </div>
                 </a>
             </div>
 
+            <!-- 5 -->
             <div class="col-12 col-md-6">
                 <a href="detail.html?id=SIH25162" class="text-decoration-none text-light">
-                    <div class="ps-card">ChipGuard AI</div>
+                    <div class="ps-card">
+                        <div class="ps-header">
+                            <span class="ps-icon">🔍</span> ChipGuard AI
+                        </div>
+                        <div class="ps-meta">
+                            <span class="ps-id">SIH25162</span>
+                            <span class="badge-soft">Software</span>
+                        </div>
+                    </div>
                 </a>
             </div>
 
+            <!-- 6 -->
             <div class="col-12 col-md-6">
                 <a href="detail.html?id=SIH25163" class="text-decoration-none text-light">
-                    <div class="ps-card">AutoHeal Systems</div>
+                    <div class="ps-card">
+                        <div class="ps-header">
+                            <span class="ps-icon">🔄</span> AutoHeal Systems
+                        </div>
+                        <div class="ps-meta">
+                            <span class="ps-id">SIH25163</span>
+                            <span class="badge-soft">Software</span>
+                        </div>
+                    </div>
                 </a>
             </div>
 
+            <!-- 7 -->
             <div class="col-12 col-md-6">
                 <a href="detail.html?id=SIH25192" class="text-decoration-none text-light">
-                    <div class="ps-card">Project Oracle</div>
+                    <div class="ps-card">
+                        <div class="ps-header">
+                            <span class="ps-icon">📈</span> Project Oracle
+                        </div>
+                        <div class="ps-meta">
+                            <span class="ps-id">SIH25192</span>
+                            <span class="badge-soft">Software</span>
+                        </div>
+                    </div>
                 </a>
             </div>
 
+            <!-- 8 -->
             <div class="col-12 col-md-6">
                 <a href="detail.html?id=SIH25231" class="text-decoration-none text-light">
-                    <div class="ps-card">OfflineMind RAG</div>
+                    <div class="ps-card">
+                        <div class="ps-header">
+                            <span class="ps-icon">🧠</span> OfflineMind RAG
+                        </div>
+                        <div class="ps-meta">
+                            <span class="ps-id">SIH25231</span>
+                            <span class="badge-soft">Software</span>
+                        </div>
+                    </div>
                 </a>
             </div>
 
+            <!-- 9 -->
             <div class="col-12 col-md-6">
                 <a href="detail.html?id=SIH25195" class="text-decoration-none text-light">
-                    <div class="ps-card">SmartDesk Pro</div>
+                    <div class="ps-card">
+                        <div class="ps-header">
+                            <span class="ps-icon">🎫</span> SmartDesk Pro
+                        </div>
+                        <div class="ps-meta">
+                            <span class="ps-id">SIH25195</span>
+                            <span class="badge-soft">Software</span>
+                        </div>
+                    </div>
                 </a>
             </div>
 
+            <!-- 10 -->
             <div class="col-12 col-md-6">
                 <a href="detail.html?id=SIH25235" class="text-decoration-none text-light">
-                    <div class="ps-card">LogVault</div>
+                    <div class="ps-card">
+                        <div class="ps-header">
+                            <span class="ps-icon">📜</span> LogVault
+                        </div>
+                        <div class="ps-meta">
+                            <span class="ps-id">SIH25235</span>
+                            <span class="badge-soft">Software</span>
+                        </div>
+                    </div>
                 </a>
             </div>
 
+            <!-- 11 -->
             <div class="col-12 col-md-6">
                 <a href="detail.html?id=SIH25243" class="text-decoration-none text-light">
-                    <div class="ps-card">AquaVision AI</div>
+                    <div class="ps-card">
+                        <div class="ps-header">
+                            <span class="ps-icon">🌊</span> AquaVision AI
+                        </div>
+                        <div class="ps-meta">
+                            <span class="ps-id">SIH25243</span>
+                            <span class="badge-soft">Software</span>
+                        </div>
+                    </div>
                 </a>
             </div>
 
+            <!-- 12 -->
             <div class="col-12 col-md-6">
                 <a href="detail.html?id=SIH25245" class="text-decoration-none text-light">
-                    <div class="ps-card">TechForesight AI</div>
+                    <div class="ps-card">
+                        <div class="ps-header">
+                            <span class="ps-icon">🔮</span> TechForesight AI
+                        </div>
+                        <div class="ps-meta">
+                            <span class="ps-id">SIH25245</span>
+                            <span class="badge-soft">Software</span>
+                        </div>
+                    </div>
                 </a>
             </div>
 
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        Source: Smart India Hackathon (SIH) 2025
+    </footer>
 
 </body>
 
